@@ -1,0 +1,35 @@
+{
+	"folders": [
+		{
+			"path": "WorkingWithNumerics"
+		},
+		{
+			"path": "WorkingWithText"
+		},
+		{
+			"path": "WorkingWithRegularExpressions"
+		},
+		{
+			"path": "WorkingWithLists"
+		},
+		{
+			"path": "WorkingWithDictionaries"
+		},
+		{
+			"path": "WorkingWithRanges"
+		},
+		{
+			"path": "WorkingWithNetworkResources"
+		},
+		{
+			"path": "WorkingWithReflection"
+		},
+		{
+			"path": "Internationalization"
+		},
+		{
+			"path": "Excercise02"
+		}
+	],
+	"settings": {}
+}

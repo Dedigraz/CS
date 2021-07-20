@@ -1,0 +1,25 @@
+@model Northwinds.Category
+@{
+    ViewData["Title"] = Model.CategoryName;
+}
+   <h1>@Model.CategoryName <h5 id="catid">
+       Category ID: @Model.CategoryID
+   </h5>
+   </h1>
+
+<div>
+    <h3 id="catdes"><span style="font-weight: bolder;">Description: </span>@Model.Description</h3>
+
+    <h2>Products in this category: </h2>
+
+    <div id="newspaper">
+        <ul>
+            @foreach (var item in Model.Products)
+            {
+                <li>
+                    @item.ProductName
+                </li>
+            }
+        </ul>
+    </div>
+</div>

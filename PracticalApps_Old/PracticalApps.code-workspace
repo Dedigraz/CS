@@ -1,0 +1,28 @@
+{
+	"folders": [
+		{
+			"path": "NorthwindEntitiesLib"
+		},
+		{
+			"path": "NorthwindContextLib"
+		},
+		{
+			"path": "NorthwindWeb"
+		},
+		{
+			"path": "NorthwindEmployees"
+		},
+		{
+			"path": "NorthwindMvc"
+		},
+		{
+			"path": "NorthwindCMS"
+		},
+		{
+			"path": "NorthwindService"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "NorthwindCMS"
+	}
+}

@@ -1,0 +1,51 @@
+@model NorthwindML.Models.HomeCartViewModel
+@{
+	ViewData["Title"] ="Shopping Cart - Northwind ML";
+}
+<h1>@ViewData["Title"]</h1>
+<table class="table table-bordered  ">
+	<thead >
+		<tr>
+			<th>Product ID</th>
+			<th>Product Name</th>
+		</tr>
+		</thead>
+		<tbody>
+			@foreach (var item in Model.Cart.Items)
+			{
+				<tr>
+					<td >@item.ProductName</td>
+					<td>@item.ProductId</td>
+				</tr>
+			}
+		</tbody>
+</table>
+<h2>Customers who bought items in your cart also bought the following products</h2>
+@if (Model.Reccomendations.Count() == 0)
+{
+	<div>No Recommendations.</div>
+}
+else
+{
+	<div>
+		<table class="table table-bordered  ">
+			<thead class="thead-default">
+				<tr>
+					<th></th>
+					<th>Cobought Product</th>
+					<th>Score</th>
+				</tr>
+				</thead>
+				<tbody>
+					@foreach (var rec in Model.Reccomendations)
+					{
+						<tr>
+							<td ><a asp-controller="Home" asp-action="Cart" asp-route-id="@rec.CoBoughtProductID">Add to Cart</a></td>
+							<td>@rec.ProductName</td>
+							<td>@rec.score</td>
+						</tr>
+					}
+				</tbody>
+		</table>
+	</div>
+}
